@@ -23,6 +23,6 @@ Before you get started, ensure you have the following installed:
     ```bash
    pip install -r requirements.txt
 
-3. Install JS dependencies using 'npm'
+3. Tailwind Installation
     ```bash
-   npm install
+   https://django-tailwind.readthedocs.io/en/latest/installation.html
