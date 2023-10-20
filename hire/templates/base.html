@@ -1,0 +1,26 @@
+{% load static tailwind_tags %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+    <title>{% block title %}My Website{% endblock %}</title>
+
+    {% tailwind_css %}
+</head>
+<body>
+    <header>
+        <h1>Test NAV</h1>
+        <!-- Navbar content goes here -->
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <h1>Test FOOTER</h1>
+    </footer>
+</body>
+</html>
