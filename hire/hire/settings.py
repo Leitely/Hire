@@ -29,6 +29,8 @@ INSTALLED_APPS = [
 
     "system.home.apps.HomeConfig",
 
+    'crispy_forms',
+    'crispy_tailwind',
     'tailwind',
     'theme',
     'django_browser_reload'
@@ -122,11 +124,14 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-TAILWIND_APP_NAME = 'theme'
+TAILWIND_APP_NAME               = 'theme'
+TAILWIND_ALLOWED_TEMPLATE_PACKS = 'tailwind'
+CRISPY_TEMPLATE_PACK            = 'tailwind'
 
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-
+# LOGIN_REDIRECT_URL  = '/'
+LOGOUT_REDIRECT_URL = 'login'
 # NPM_BIN_PATH = r"/usr/local/bin/npm"
