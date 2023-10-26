@@ -37,7 +37,7 @@ Before you get started, ensure you have the following installed:
     npm install @tailwindcss/line-clamp --save-dev
     npm install tailwindcss @tailwindcss/forms @tailwindcss/typography @tailwindcss/line-clamp --save-dev
 
-4. Tailwind Listener
+4. Tailwind Watcher
    ```bash
    python manage.py tailwind start
    
