@@ -10,7 +10,8 @@ Before you get started, ensure you have the following installed:
 
 - Python 3.88
 - pip
-- Node.js and npm
+- Node.js v20.8.1
+- npm 10.1.0
 
 ## Installation
 
@@ -35,3 +36,8 @@ Before you get started, ensure you have the following installed:
     npm install @tailwindcss/typography --save-dev
     npm install @tailwindcss/line-clamp --save-dev
     npm install tailwindcss @tailwindcss/forms @tailwindcss/typography @tailwindcss/line-clamp --save-dev
+
+4. Tailwind Listener
+   ```bash
+   python manage.py tailwind start
+   
