@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
@@ -9,10 +10,12 @@
 
     {% tailwind_css %}
 </head>
+
 <body>
     <header>
-        <h1>Test NAV</h1>
+        {% include "./nav/navbar.html" %}
         <!-- Navbar content goes here -->
+
     </header>
 
     <main>
@@ -20,7 +23,10 @@
     </main>
 
     <footer>
-        <h1>Test FOOTER</h1>
+        {% include "./footer/footer.html" %}
     </footer>
+
+
 </body>
+
 </html>
