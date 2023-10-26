@@ -134,4 +134,4 @@ INTERNAL_IPS = [
 
 LOGIN_REDIRECT_URL  = '/'
 LOGOUT_REDIRECT_URL = 'login'
-# NPM_BIN_PATH = r"/usr/local/bin/npm"
+# NPM_BIN_PATH = "Program Files/nodejs/npm.cmd"
