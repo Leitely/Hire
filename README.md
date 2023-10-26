@@ -26,6 +26,12 @@ Before you get started, ensure you have the following installed:
 3. Tailwind Installation
     ```bash
    https://django-tailwind.readthedocs.io/en/latest/installation.html
-     npm install -g cross-env
+    npm install -g cross-env
     npm install -g tailwindcss
     npm install tailwindcss --save-dev
+    npm install @tailwindcss/forms --save-dev
+    npm install postcss-simple-vars --save-dev
+    npm install @tailwindcss/aspect-ratio --save-dev
+    npm install @tailwindcss/typography --save-dev
+    npm install @tailwindcss/line-clamp --save-dev
+    npm install tailwindcss @tailwindcss/forms @tailwindcss/typography @tailwindcss/line-clamp --save-dev
