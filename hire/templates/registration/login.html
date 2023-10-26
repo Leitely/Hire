@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load tailwind_filters %}
+
+{% block content %}
+    <h1>TEST LOGIN</h1>
+
+    <form method="post">
+    {% csrf_token %}
+
+    {{ form|crispy }}
+
+    <p>Don't have an account? Create one <a href="/sign-up">Here</a>!</p>
+
+    <button type="submit" class="btn btn-default">Login</button>
+
+    </form>
+{% endblock content %}
