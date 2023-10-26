@@ -26,3 +26,6 @@ Before you get started, ensure you have the following installed:
 3. Tailwind Installation
     ```bash
    https://django-tailwind.readthedocs.io/en/latest/installation.html
+     npm install -g cross-env
+    npm install -g tailwindcss
+    npm install tailwindcss --save-dev
