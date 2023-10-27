@@ -128,6 +128,7 @@ TAILWIND_APP_NAME               = 'theme'
 TAILWIND_ALLOWED_TEMPLATE_PACKS = 'tailwind'
 CRISPY_TEMPLATE_PACK            = 'tailwind'
 
+
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
