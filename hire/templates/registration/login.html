@@ -2,16 +2,19 @@
 {% load tailwind_filters %}
 
 {% block content %}
-    <h1>TEST LOGIN</h1>
+    <div>
+        <h1>LOGIN</h1>
 
-    <form method="post">
-    {% csrf_token %}
+        <form method="post">
+        {% csrf_token %}
 
-    {{ form|crispy }}
+        {{ form|crispy }}
 
-    <p class="text-primary">Don't have an account? Create one <a href="/sign-up">Here</a>!</p>
+        <p class="text-primary">Don't have an account? Create one <a href="/sign-up">Here</a>!</p>
 
-    <button type="submit" class="btn btn-default">Login</button>
+        <button type="submit" class="btn btn-default">Login</button>
 
-    </form>
+        </form>
+    </div>
+
 {% endblock content %}
