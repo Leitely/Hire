@@ -11,21 +11,19 @@
     {% tailwind_css %}
 </head>
 
-<body>
+<body class="flex flex-col min-h-screen bg-primary">
     <header>
         {% include "./nav/navbar.html" %}
         <!-- Navbar content goes here -->
-
     </header>
 
-    <main>
+    <main class="flex-grow">
         {% block content %}{% endblock %}
     </main>
 
     <footer>
         {% include "./footer/footer.html" %}
     </footer>
-
 
 </body>
 
