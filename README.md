@@ -23,8 +23,13 @@ Before you get started, ensure you have the following installed:
 2. Install requirements
     ```bash
    pip install -r requirements.txt
+   
+3. .env File
+    ```bash
+   Configure .env file:
+    NPM_BIN_PATH="C:\\Program Files\\nodejs\\npm.cmd"
 
-3. Tailwind Installation
+4. Tailwind Installation
     ```bash
    https://django-tailwind.readthedocs.io/en/latest/installation.html
     npm install -g cross-env
@@ -37,7 +42,7 @@ Before you get started, ensure you have the following installed:
     npm install @tailwindcss/line-clamp --save-dev
     npm install tailwindcss @tailwindcss/forms @tailwindcss/typography @tailwindcss/line-clamp --save-dev
 
-4. Tailwind Watcher
+5. Tailwind Watcher
    ```bash
    python manage.py tailwind start
    

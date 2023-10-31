@@ -1,5 +1,6 @@
-from pathlib import Path
 import os
+from pathlib        import Path
+from dotenv         import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -128,11 +129,15 @@ TAILWIND_APP_NAME               = 'theme'
 TAILWIND_ALLOWED_TEMPLATE_PACKS = 'tailwind'
 CRISPY_TEMPLATE_PACK            = 'tailwind'
 
-
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
 LOGIN_REDIRECT_URL  = '/'
 LOGOUT_REDIRECT_URL = 'login'
-NPM_BIN_PATH = "C:\\Program Files\\nodejs\\npm.cmd"
+
+NPM_BIN_PATH = os.getenv("NPM_BIN_PATH", None)
+
+if NPM_BIN_PATH:
+    NPM_RUN = os.path.join(NPM_BIN_PATH, "npm")
+    # NPM_BIN_PATH = "C:\\Program Files\\nodejs\\npm.cmd"
