@@ -2,6 +2,9 @@ import os
 from pathlib        import Path
 from dotenv         import load_dotenv
 
+
+load_dotenv()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -140,4 +143,3 @@ NPM_BIN_PATH = os.getenv("NPM_BIN_PATH", None)
 
 if NPM_BIN_PATH:
     NPM_RUN = os.path.join(NPM_BIN_PATH, "npm")
-    # NPM_BIN_PATH = "C:\\Program Files\\nodejs\\npm.cmd"
