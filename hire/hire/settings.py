@@ -20,6 +20,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# ALL AUTH CONFIGURATION
+SITE_ID = 1
+AUTHENTICATION_BACKENDS = [
+    # DJANGO LOGIN
+    'django.contrib.auth.backends.ModelBackend',
+
+    # ALL AUTH LOGIN
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
 
 # Application definition
 
@@ -30,6 +39,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.sites",
+
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
+    "allauth.socialaccount.providers.github",
 
     "system.home.apps.HomeConfig",
 
@@ -49,6 +64,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django_browser_reload.middleware.BrowserReloadMiddleware",
+    "allauth.account.middleware.AccountMiddleware",
 ]
 
 ROOT_URLCONF = "hire.urls"
@@ -64,10 +80,21 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "django.template.context_processors.request"
             ],
         },
     },
 ]
+
+SOCIALACCOUNT_PROVIDERS = {
+    'github': {
+        'APP': {
+            'client_id': '5d598c20517447a3e6d5',
+            'secret': 'bba6c863ecc53202362393e678559a6a36bc9202',
+            'key': '',
+        }
+    }
+}
 
 WSGI_APPLICATION = "hire.wsgi.application"
 
