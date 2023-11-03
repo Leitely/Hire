@@ -4,11 +4,12 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
+
+    {% tailwind_css %}
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
     <title>{% block title %}My Website{% endblock %}</title>
-
-    {% tailwind_css %}
 </head>
 
 <body class="flex flex-col min-h-screen bg-primary">
