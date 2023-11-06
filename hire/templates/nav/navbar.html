@@ -1,15 +1,71 @@
 {% load static tailwind_tags %}
 
-<nav class="bg-primary-800 p-6">
+<!-- <nav class="bg-primary-800 p-6">
   <div class="container mx-auto flex justify-between items-center">
     <a href="#">
       <img width="50" height="50" src="{% static 'images/logo.png' %}" alt="Logo" />
     </a>
-    <div class="space-x-4">
+    <div class="space-x-28">
       <a href="#" class="text-primary-400">Home</a>
       <a href="#" class="text-primary-400">About</a>
       <a href="#" class="text-primary-400">Services</a>
       <a href="#" class="text-primary-400">Contact</a>
+    </div>
+
+  </div>
+</nav> -->
+
+<nav class="bg-primary-800 p-0">
+  <div class="lg:hidden">
+    <div class="flex justify-between p-3">
+      <div>
+        <a href=" #">
+          <img width="50" height="40" src="{% static 'images/logo.png' %}" alt="Logo" />
+        </a>
+      </div>
+      <div class="p-2 cursor-pointer " id="menu-button">
+        <img class="w-7 h-7" src="{% static 'images/hamburger.svg' %}" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="items-center justify-between lg:flex">
+    <a class="p-2" href="#">
+      <img width="50" height="40" src="{% static 'images/logo.png' %}" alt="Logo" />
+    </a>
+    <!-- spacing -->
+    <!-- class=" lg:w-10/12" -->
+    <div>
+      <div class="hidden lg:block" id="menu">
+        <ul class="justify-between text-lg text-center lg:flex">
+          <li class="p-2 lg:-translate-y-1 lg:hover:border-t-4">
+            <a href="#" class="text-primary-400">Home</a>
+          </li>
+          <li class="p-2 lg:-translate-y-1 lg:hover:border-t-4">
+            <a href="#" class="text-primary-400">Our Services</a>
+          </li>
+          <li class="p-2 lg:-translate-y-1 lg:hover:border-t-4">
+            <a href="#" class="text-primary-400">About Us</a>
+          </li>
+          <li class="p-2 lg:-translate-y-1 lg:hover:border-t-4">
+            <a href="#" class="text-primary-400">Contact Us</a>
+          </li>
+          <!-- <li class="p-2 lg:-translate-y-1 lg:hover:border-t-4">
+            <a href="#" class="text-primary-400">Blog</a>
+          </li> -->
+          <!-- <li class="p-2 lg:-translate-y-1 lg:hover:border-t-4">
+            <a href="#" class="text-primary-400">Sign Up</a>
+          </li> -->
+          <li class="py-2">
+            <a href="#">
+              <button
+                class="flex items-center justify-center w-4/5 p-2 px-5 mx-auto bg-orange-400 rounded-full lg:w-auto lg:rounded-r-xl">
+                <img class="w-6 h-6 mx-2" src="/static_files/svgs5/circle-user.svg" alt="user">
+                Sign In
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
