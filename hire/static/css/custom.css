@@ -1,4 +1,159 @@
-/*@tailwind base;*/
-/*@tailwind components;*/
-/*@tailwind utilities;*/
+@import "variables.css";
+
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size  : 16px;
+  line-height: 1.5;
+  /*background-color: #f0f0f0;*/
+  color      : var(--primary-900);
+}
+
+h1 {
+  font-size    : 2rem;
+  font-weight  : bold;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size    : 1.5rem;
+  font-weight  : bold;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size    : 1.25rem;
+  font-weight  : bold;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size    : 1.125rem;
+  font-weight  : bold;
+  margin-bottom: 15px;
+}
+
+h5 {
+  font-size    : 1rem;
+  font-weight  : bold;
+  margin-bottom: 15px;
+}
+
+h6 {
+  font-size    : 0.875rem;
+  font-weight  : bold;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size    : 1rem;
+  line-height  : 1.5;
+  margin-bottom: 15px;
+}
+
+a {
+  color          : var(--secondary-600);
+  text-decoration: none;
+  transition     : color 0.3s;
+}
+
+a:hover {
+  color: var(--secondary-900);
+}
+
+/* -------- FORMS -------- */
+/* -------- BUTTONS -------- */
+
+/* BUTTON PRIMARY */
+.btn {
+  display         : inline-block;
+  width           : 100%;
+  border-radius   : 0.25rem;
+  color           : white;
+  padding         : 0.5rem 1rem;
+  margin-bottom   : 0.75rem;
+  transition      : background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+.btn-secondary-900 {
+  background-color: var(--primary-900);
+}
+
+.btn-secondary-900:hover {
+  border          : 1px solid var(--primary-900);
+  color           : vvar(--primary-900);
+}
+
+/* BUTTON SECONDARY */
+.btn-secondary-600 {
+  background-color: var(--secondary-600);
+}
+
+.btn-secondary-600:hover {
+  border          : 1px solid var(--secondary-600);
+  color           : var(--secondary-600);
+}
+
+/* BUTTON TERTIARY */
+.btn-tertiary-900 {
+  background-color: var(--tertiary-900);
+}
+
+.btn-tertiary-900:hover {
+  border          : 1px solid var(--tertiary-900);
+  color           : var(--tertiary-900);
+}
+
+/* -------- BUTTONS END -------- */
+
+/* CHECK BOXES */
+[type='checkbox'], [type='radio'] {
+  color           : transparent;
+  background-color: transparent;
+  border-color    : transparent;
+  border          : 2px solid var(--secondary-600);
+  border-radius   : 3px;
+}
+
+[type='checkbox']:checked, [type='radio']:checked {
+  background-color: white;
+  color           : var(--secondary-600);
+  border          : 1px solid var(--secondary-600);
+  padding         : 1px;
+}
+
+[type='checkbox']:checked::before, [type='radio']:checked::before {
+  content    : '\2713';
+  font-size  : 18px;
+  line-height: 1;
+  color      : var(--secondary-600);
+  position   : absolute;
+  top        : 0;
+  left       : 0;
+}
+
+[type='checkbox']:focus, [type='radio']:focus {
+    --tw-ring-color : var(--secondary-600);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--secondary-600);
+}
+
+[type='checkbox']:checked:hover, [type='checkbox']:checked:focus, [type='radio']:checked:hover, [type='radio']:checked:focus {
+     background-color: white;
+}
+
+[type='checkbox']:checked::hover, [type='radio']:checked::hover {
+  background-color: white;
+}
+
+/* CHECK BOX END */
+/* -------- FORMS END -------- */
 
