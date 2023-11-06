@@ -2,3 +2,5 @@ hireenv/
 *.pyc
 node_modules/
 node_modules 
+.env
+theme/static/css/dist/style.css
