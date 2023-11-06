@@ -1,0 +1,33 @@
+/* CORRESPOND WITH theme/static/css/dist/styles.css */
+
+:root {
+  --primary-100: #f8fafc;
+  --primary-200: #e2e8f0;
+  --primary-300: #cbd5e1;
+  --primary-400: #94a3b8;
+  --primary-500: #64748b;
+  --primary-600: #475569;
+  --primary-700: #334155;
+  --primary-800: #1e293b;
+  --primary-900: #0f172a;
+
+  --secondary-100: #ccfbf1;
+  --secondary-200: #99f6e4;
+  --secondary-300: #5eead4;
+  --secondary-400: #2dd4bf;
+  --secondary-500: #14b8a6;
+  --secondary-600: #0d9488;
+  --secondary-700: #0f766e;
+  --secondary-800: #115e59;
+  --secondary-900: #134e4a;
+
+  --tertiary-100: #faf4e5;
+  --tertiary-200: #f4e0b7;
+  --tertiary-300: #ecc588;
+  --tertiary-400: #dfaa5c;
+  --tertiary-500: #d2b48c;
+  --tertiary-600: #b39369;
+  --tertiary-700: #8d7046;
+  --tertiary-800: #765836;
+  --tertiary-900: #674b2e;
+}
