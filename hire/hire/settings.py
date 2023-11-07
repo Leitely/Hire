@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     "allauth.socialaccount.providers.google",
     "allauth.socialaccount.providers.instagram",
 
-    "system.home.apps.HomeConfig",
+    "apps.system.home",
+    "apps.admin.user",
 
     'crispy_forms',
     'crispy_tailwind',
@@ -117,6 +118,8 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
+
+AUTH_USER_MODEL = 'user.CustomUser'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
