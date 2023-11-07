@@ -68,12 +68,12 @@ MIDDLEWARE = [
     "allauth.account.middleware.AccountMiddleware",
 ]
 
-ROOT_URLCONF = "hire.urls"
+ROOT_URLCONF = "config.urls"
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, "templates")],
+        "DIRS": [os.path.join(BASE_DIR, "apps/templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -104,7 +104,7 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 
-WSGI_APPLICATION = "hire.wsgi.application"
+WSGI_APPLICATION = "config.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
