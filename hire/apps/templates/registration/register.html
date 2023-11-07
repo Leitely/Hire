@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load tailwind_filters static socialaccount %}
+
+{% block content %}
+
+    <section>
+        <div class="flex flex-col justify-center items-center">
+
+            <h1>Register</h1>
+
+            <form method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <h1>{{ form.errors }}</h1>
+                <p>Have an account? Login <a href="/login">Here</a>!</p>
+
+                <button type="submit" class="btn btn-secondary-600">Register</button>
+
+            </form>
+
+            <!-- Social login buttons -->
+            <div class="flex space-x-4">
+                <a
+                        class="mb-3 flex w-full items-center justify-center rounded bg-info px-7 pb-2.5 pt-3 text-center text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#54b4d3] transition duration-150 ease-in-out hover:bg-info-600 hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:bg-info-600 focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:outline-none focus:ring-0 active:bg-info-700 active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(84,180,211,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)]"
+                        href="{% provider_login_url 'google' %}"
+                        role="button"
+                        data-te-ripple-init
+                        data-te-ripple-color="light">
+                    <img class="mr-2" style="width: 30px;" src="{% static 'images/google.svg' %}"
+                         alt="Logo"/>
+                    Continue with Google
+                </a>
+
+                <a
+                        class="mb-3 flex w-full items-center justify-center rounded bg-info px-7 pb-2.5 pt-3 text-center text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#54b4d3] transition duration-150 ease-in-out hover:bg-info-600 hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:bg-info-600 focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:outline-none focus:ring-0 active:bg-info-700 active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(84,180,211,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)]"
+                        href="{% provider_login_url 'github' %}"
+                        role="button"
+                        data-te-ripple-init
+                        data-te-ripple-color="light">
+                    <img class="mr-2" style="width: 30px;" src="{% static 'images/facebook.svg' %}"
+                         alt="Logo"/>
+                    Continue with Facebook
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+{% endblock content %}
