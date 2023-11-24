@@ -1,5 +1,6 @@
 from django.views.generic               import TemplateView
 from django.contrib.auth.mixins         import LoginRequiredMixin
+from django.urls                        import reverse
 from django.shortcuts                   import render, redirect
 from django.contrib.auth                import login
 
@@ -23,7 +24,6 @@ class RegisterView(TemplateView):
         if form.is_valid():
 
             user         = form.save()
-            # user.backend = 'django.contrib.auth.backends.ModelBackend'
 
             login(request, user)
 

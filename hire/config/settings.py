@@ -21,9 +21,6 @@ ALLOWED_HOSTS = []
 # ALL AUTH CONFIGURATION
 SITE_ID = 1
 AUTHENTICATION_BACKENDS = [
-    # DJANGO LOGIN
-    'django.contrib.auth.backends.ModelBackend',
-
     # ALL AUTH LOGIN
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
@@ -47,7 +44,7 @@ INSTALLED_APPS = [
     "allauth.socialaccount.providers.instagram",
 
     "apps.system.home",
-    "apps.admin.user",
+    "apps.admin.custom_user",
 
     'crispy_forms',
     'crispy_tailwind',
@@ -119,7 +116,7 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
-AUTH_USER_MODEL = 'user.CustomUser'
+AUTH_USER_MODEL = 'custom_user.CustomUser'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
