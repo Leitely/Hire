@@ -89,8 +89,8 @@ a:hover {
 }
 
 .btn-secondary-900:hover {
-  border          : 1px solid var(--primary-900);
-  color           : vvar(--primary-900);
+  /*border          : 1px solid var(--primary-900);*/
+  color           : var(--primary-900);
 }
 
 /* BUTTON SECONDARY */
