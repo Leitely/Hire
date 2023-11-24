@@ -28,6 +28,8 @@ class RegisterView(TemplateView):
             login(request, user)
 
             return redirect('/')
+        # else:
+        #     form = RegistrationForm()
 
         return render(request, self.template_name, context={'form': form})
 

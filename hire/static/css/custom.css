@@ -155,5 +155,12 @@ a:hover {
 }
 
 /* CHECK BOX END */
+
+/* HELP TEXT */
+.text-red-500 strong {
+  color: var(--red-500);
+}
+/* HELP TEXT END */
+
 /* -------- FORMS END -------- */
 
