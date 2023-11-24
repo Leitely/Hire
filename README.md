@@ -8,7 +8,7 @@ This is a Django project that [briefly describe your project's purpose or featur
 
 Before you get started, ensure you have the following installed:
 
-- Python 3.88
+- Python 3.11
 - pip
 - Node.js v20.8.1
 - npm 10.1.0

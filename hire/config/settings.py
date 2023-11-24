@@ -161,9 +161,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-TAILWIND_APP_NAME = 'theme'
+TAILWIND_APP_NAME               = 'theme'
 TAILWIND_ALLOWED_TEMPLATE_PACKS = 'tailwind'
-CRISPY_TEMPLATE_PACK = 'tailwind'
+CRISPY_TEMPLATE_PACK            = 'tailwind'
 
 INTERNAL_IPS = [
     "127.0.0.1",
